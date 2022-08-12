@@ -3,8 +3,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { ProductModule } from './product/product.module';
 import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
-// import { StripeModule } from './stripe/stripe.module';
 import { ConfigModule } from '@nestjs/config';
+import { StripeModule } from './stripe/stripe.module';
 
 @Module({
   imports: [
@@ -17,7 +17,7 @@ import { ConfigModule } from '@nestjs/config';
     ProductModule,
     UserModule,
     AuthModule,
-    // StripeModule,
+    StripeModule,
   ],
 })
 export class AppModule {}
