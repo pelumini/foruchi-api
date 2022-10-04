@@ -15,7 +15,7 @@ import { JwtStrategy } from './guards/jwt.strategy';
     JwtModule.registerAsync({
       useFactory: () => ({
         secret: 'secret',
-        signOptions: { expiresIn: '3600s' },
+        signOptions: { expiresIn: '600s' },
       }),
     }),
   ],
